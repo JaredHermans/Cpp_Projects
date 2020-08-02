@@ -1,11 +1,5 @@
 /************************************************************************************************************************
-
-Name:  Jared Hermans        Z#: Z23486201
-Course: Foundations of Computer Science (COP3014)
-Professor: Dr. Lofton Bullard
-Due Date:  07/27/2020           Due Time: 11:59 PM
-Total Points: 20
-Assignment #: 9
+Jared Hermans
 
 Description: Program takes nursery_stock.txt file as an input and prints it to an output file nursery_result30.txt. The 
 program also allows the user to enter order fields to add them and calculate the remaining fields and allows the user to 
