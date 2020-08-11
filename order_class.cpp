@@ -8,11 +8,9 @@ using namespace std;
 
 
 /************************************************************************************************************************************/
-//Name: default constructor
-//Precondition: Called automatically
-//Postcondition: initializes class order_record
+//Name: Default Constructor
 //Decription: Reads the data file of purchase order information (plant name, county name, plant cost and quantity) into the dynamic array of order records, 
-//STR. If the count become equal to the size the function double_size is called and the memory allocated to STR is doubled.
+		//STR. If the count become equal to the size the function double_size is called and the memory allocated to STR is doubled.
 /************************************************************************************************************************************/
 order_class::order_class()
 {
@@ -40,8 +38,6 @@ order_class::order_class()
 
 /************************************************************************************************************************************/
 //Name: copy constructor
-//Precondition: 
-//Postcondition: 
 //Decription: The function performs a deep copy of the formal parameter org.
 /************************************************************************************************************************************/
 order_class::order_class(const order_class& org)
@@ -57,7 +53,6 @@ order_class::order_class(const order_class& org)
 }
 
 /***********************************************************************************************************************************/
-//Name: is_Empty
 //Decription: returns true if STR is empty
 /**********************************************************************************************************************************/
 bool order_class::is_Empty()
@@ -66,7 +61,6 @@ bool order_class::is_Empty()
 }
 
 /**********************************************************************************************************************************/
-//Name: is_full 
 //Decription: returns true if STR is full
 /*********************************************************************************************************************************/
 bool order_class::is_full()
@@ -75,7 +69,6 @@ bool order_class::is_full()
 }
 
 /**********************************************************************************************************************************/
-//Name: search
 //Decription: locates key in STR if it is there; otherwise -1 is returned
 /*********************************************************************************************************************************/
 int order_class::search(const string key)
@@ -84,9 +77,6 @@ int order_class::search(const string key)
 }
 
 /*********************************************************************************************************************************/
-//Name: add
-//Precondition: Member function of order_class
-//Postcondition: Function adds a field to order_record then calls process to calculate the rest of the parameters
 //Decription: adds a order_record to STR; if STR is full, double_size is called to increase the size of STR. The user 
 //            is prompted to enter the plant name, county name, plant cost and quantity.
 /********************************************************************************************************************************/
@@ -106,8 +96,6 @@ void order_class::add()
 
 /********************************************************************************************************************************/
 //Name: operator-
-//Precondition: key passed by value from main
-//Postcondition: removes a field of order_record
 //Decription: removes all order records in STR with a plant name field that matches key, if it is there.
 /*******************************************************************************************************************************/
 order_class& order_class::operator-(const string key)
@@ -137,8 +125,6 @@ order_class& order_class::operator-(const string key)
 }
 
 /******************************************************************************************************************************/
-//Name: double_size
-//Precondition: Called by the default constructor
 //Decription: doubles the size (capacity) of STR
 /******************************************************************************************************************************/
 void order_class::double_size()
@@ -157,9 +143,6 @@ void order_class::double_size()
 
 
 /******************************************************************************************************************************/
-//Name: process
-//Precondition: Utilizes private date from order_class
-//Postcondition: calculates and fills the rest of the fields of order_record
 //Decription: calculate the net cost, tax rate, order tax, discount and total cost for every order record in STR. for every call record in STR.
 /*****************************************************************************************************************************/
 void order_class::process()
